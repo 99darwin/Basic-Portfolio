@@ -98,6 +98,12 @@ body {
 	padding-right: 10px;
 }
 
+/* Contact Form */
+
+.contact {
+	float: left;
+}
+
 /* Sidebar Area */
 
 .aside {
