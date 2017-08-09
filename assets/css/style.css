@@ -1,16 +1,20 @@
 h1 {
 	font-size: 30px;
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
 }
 
 p, h3 {
 	color: #777777;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 body {
 	background-image: url('../images/concrete-texture.png');
+}
+
+section {
+	clear: both;
 }
 
 /* Top Navigation & Logo */
@@ -32,7 +36,8 @@ body {
 	background-color: #ffffff;
 	border-bottom: #cccccc;
 	box-shadow: 0px 0px 1px 0px;
-	padding-bottom: 37px;
+	/*padding-bottom: 37px;*/
+	overflow: hidden;
 }
 
 .topnav {
@@ -40,10 +45,11 @@ body {
 	overflow: hidden;
 	padding-top: 30px;
 	padding-right: 155px;
+	float: right;
 }
 
 .topnav a {
-	float: right;
+	float: left;
 	display: block;
 	text-align: center;
 	padding-top: 5px;
@@ -56,7 +62,7 @@ body {
 	border-right: 1px solid #777777;
 }
 
-.topnav a:last {
+.topnav a:last-child {
 	border-right: none;
 }
 
@@ -65,7 +71,7 @@ body {
 .about {
 	margin-top: 30px;
 	margin-left: 125px;
-	margin-right: 45px;
+	margin-right: 25px;
 	border: 1px solid #cccccc;
 	border-radius: 1px;
 	border-color: #dddddd;
@@ -83,7 +89,7 @@ body {
 }
 
 #aboutMe {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	padding-bottom: 10px;
 	margin-right: 10px;
 	border-bottom: 2px solid #cccccc;
@@ -102,18 +108,100 @@ body {
 
 .contact {
 	float: left;
+	margin-right: 25px;
+	margin-left: 125px;
+	margin-top: 30px;
+	width: 550px;
+	display: inline-block;
+	border: 1px solid #dddddd;
+	border-radius: 1px;
+	background-color: #ffffff;
+}
+
+#contact-me {
+	border-bottom: 2px solid #cccccc;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#contact-form {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+form p {
+	padding-top: 10px;
+}
+
+.text-input {
+	width: 500px;
+}
+
+.button {
+	background-color: #4aaaa5;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	font-size: 15px;
+}
+
+/* Portfolio Area */
+
+.portfolio {
+	background: #fff;
+	border: 1px solid #cccccc;
+	width: 447px;
+	margin-left: 125px;
+	margin-top: 30px;
+	float: left;
+	clear: both;
+}
+
+#portfolio-head {
+	border-bottom: 2px solid #cccccc;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.image {
+	position: relative;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.image img {
+	width: 100%;
+}
+
+.image h3 {
+	position: absolute;
+	top: 453px;
+	width: 100%;
+}
+
+.image h3 span {
+	padding: 10px;
+	color: white;
+	text-align: center;
+	background-color: #4aaaa5;
+}
+
+div.image {
+	float: left;
+	margin: 3px;
+	width: 200px;
 }
 
 /* Sidebar Area */
 
 .aside {
-	display: inline-block;
+	float: left;
+	margin-right: 10em;
 	margin-top: 30px;
 	margin-left: 5px;
 	border: 1px solid #cccccc;
 	border-radius: 1px;
-	width: 270px;
-	height: 178px;
+	width: 250px;
 	background-color: #ffffff;
 }
 
@@ -124,20 +212,23 @@ body {
 #connect {
 	padding-bottom: 10px;
 	margin-top: 10px;
-	padding-left: 20px;
 	border-bottom: 2px solid #cccccc;
+	width: 10em;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .social-icons {
-	padding-left: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-top: 18px;
 	padding-bottom: 10px;
 }
 
 .social-icons img {
-	width: 30%;
-	height: 30%;
+	width: 25%;
+	height: 25%;
+	padding: 2px;
 }
 
 /* Footer Area */

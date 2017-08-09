@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Nick Saponaro</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <!-- Header Logo -->
-        <div class="topBar">
-            <div class="logo" id="header">
-                <h1 id="mainHeader">Nick Saponaro</h1>
-            </div>
-        <!-- Navigation -->
-            <div class="topnav" id="myTopNav">
-                <a href="#About">About</a>
-                <a href="#Portfolio">Portfolio</a>
-                <a href="#Contact">Contact</a>
-            </div>
+
+<head>
+    <title>Contact Nick Saponaro</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Logo -->
+    <div class="topBar">
+        <div class="logo" id="header">
+            <h1 id="mainHeader">Nick Saponaro</h1>
         </div>
+        <!-- Navigation -->
+        <div class="topnav" id="myTopNav">
+            <a href="#About">About</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </div>
+    <section>
         <!-- CONTACT FORM -->
         <div class="contact">
-           <h1>Contact Me</h1>
-           <form id="contactForm">
-               Name<br>
-               <input type="text" name="name"><br>
-               Email<br>
-               <input type="email" name="email"><br>
-               Message<br>
-               <textarea name="message" form="contactForm">Enter your message here...</textarea>
-           </form>
-        </div>   
+            <div class="section">
+                <h1 id="contact-me">Contact Me</h1>
+                <form id="contactForm">
+                    <p>Name</p>
+                    <input class="text-input" type="text" name="name">
+                    <br>
+                    <p>Email</p>
+                    <input class="text-input" type="email" name="email">
+                    <br>
+                    <p>Message</p>
+                    <textarea class="text-input" name="message" form="contactForm" rows="10" cols="50">Enter your message here...</textarea><br>
+                    <br>
+                    <input class="button" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
         <!-- SIDEBAR -->
         <div class="aside">
             <div class="sidebar">
                 <h1 id="connect">Connect With Me</h1>
                 <div class="social-icons">
                     <a href="https://github.com/99darwin" target="_blank" alt="99darwin @ github"><img src="assets/images/github-icon.png"></a> <a href="https://www.linkedin.com/in/nicksaponaro/" target="_blank" alt="Nick Saponaro @ LinkedIn"><img src="assets/images/linkedin-icon.png"></a> <a href="https://stackoverflow.com/users/8432051/99darwin" target="_blank" alt="99darwin @ Stack Overflow"><img src="assets/images/stack-overflow-icon.png"></a>
-                </div>    
+                </div>
             </div>
         </div>
+    </section>
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+        <p id="copyright">&copy; Copyright 2017 Nick Saponaro</p>
+    </div>
+</body>
 
-        <!-- BEGIN FOOTER -->
-        <div class="footer">
-            <p id="copyright">&copy; Copyright 2017 Nick Saponaro</p>
-        </div>
-    </body>
 </html>
